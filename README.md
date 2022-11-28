@@ -6,6 +6,7 @@ In the Flutter Event Calendar, you can programmatically navigate to the adjacent
 
 If the current view has the minimum date range, the backward will not move to the previous view.If the current view has the maximum date range, the forward will not move to the next view.
 
+![DateNavigation](https://user-images.githubusercontent.com/46158936/204274522-0be47961-eace-4485-a70d-bd0e36b096a0.gif)
 
 You can also refer our UG documentation to know more about [DateNavigation](https://help.syncfusion.com/flutter/calendar/date-navigations) in the Flutter Calendar.
 
