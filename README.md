@@ -4,35 +4,8 @@ This example demonstrates how to programmatically navigate to the adjacent dates
 
 In the Flutter Event Calendar, you can programmatically navigate to the adjacent dates by using the [forward](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarController/forward.html) and [backward](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarController/backward.html) method of CalendarController.
 
-```
-final CalendarController _controller = CalendarController(); 
+If the current view has the minimum date range, the backward will not move to the previous view.If the current view has the maximum date range, the forward will not move to the next view.
 
-Row(
-  children: [
-    Container(
-      margin: const EdgeInsets.fromLTRB(30, 20, 0, 20),
-      child: TextButton.icon(
-        icon: const Icon(Icons.arrow_back),
-        label: const Text('Backward'),
-        onPressed: () {
-          _controller.backward!();
-        },
-      ),
-    ),
-    Container(
-      margin: const EdgeInsets.fromLTRB(70, 20, 0, 20),
-      child: TextButton.icon(
-        label: const Text('Forward'),
-        icon: const Icon(Icons.arrow_forward),
-        onPressed: () {
-          _controller.forward!();
-        },
-      ),
-    )
-  ],
-),
-
-```
 
 You can also refer our UG documentation to know more about [DateNavigation](https://help.syncfusion.com/flutter/calendar/date-navigations) in the Flutter Calendar.
 
